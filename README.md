@@ -1,11 +1,3 @@
-# 🪞 nosignups-mirror
-
-**1:1-Sicherungskopie (statischer Mirror) von [nosignups.net](https://nosignups.net/)** – dem Verzeichnis von 268 Open-Source-Tools, die komplett im Browser ohne Anmeldung laufen.
-
-> ⚖️ **Lizenz & Quelle:** Das Original-Projekt ist Open Source unter der **GPL-3.0** (siehe [`LICENSE`](LICENSE)).
-> Quellcode & Daten: [`BraveOPotato/FckSignups`](https://github.com/BraveOPotato/FckSignups).
-> Alle Rechte am Original liegen beim jeweiligen Autor. Dieses Repo ist ein unveraenderter Mirror der oeffentlich ausgelieferten Dateien.
-
 ## 📁 Inhalt
 
 | Datei | Zweck |
@@ -30,16 +22,6 @@ python3 -m http.server 8080
 
 Jeder andere statische Server geht auch (`npx serve`, nginx, GitHub Pages, ...).
 
-## 🔗 Was bleibt mit dem Original verbunden?
-
-Der Klon ist Datei-fuer-Datei identisch mit dem Original. Zur Laufzeit holt sich die App weiterhin live:
-
 - **Tool-Daten (268 Tools):** `tools.json` aus dem Original-Repo `BraveOPotato/FckSignups`
 - **GitHub-Sterne:** direkt von `api.github.com`
 - **Formulare** (Tool vorschlagen/melden): an die Cloudflare-Worker des Originalbetreibers
-
-D. h.: Inhalte aktualisieren sich automatisch, wenn das Original aktualisiert wird; Aenderungen/Sperrungen der Originalquellen wirken sich auch hier aus.
-
-## 📦 Stand des Mirrors
-
-Erstellt am **2026-09-24** von `nosignups.net`.
