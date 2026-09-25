@@ -1,3 +1,11 @@
+# ⚡ Nexus-AI
+
+**Nexus-AI – Open Source Tools. Zero Bullsh\*t.**
+
+Ein kuratiertes Verzeichnis von **268 Open-Source-Tools**, die komplett im Browser laufen – ohne Anmeldung, ohne Installation.
+
+🌐 **Live:** https://realm39.github.io/Webseite-Server-Connect-io/
+
 ## 📁 Inhalt
 
 | Datei | Zweck |
@@ -7,21 +15,25 @@
 | `assets/index-CTs05sCP.css` | komplette Styles |
 | `favicon.ico` | Icon |
 | `fonts/` | Inter & Space Grotesk (self-hosted, Variable Fonts) |
-| `robots.txt` | Original-Robots-Datei |
-| `LICENSE` | GPL-3.0 des Original-Projekts |
+| `robots.txt` | Robots-Datei |
+| `LICENSE` | GPL-3.0 |
 
 ## ▶️ Lokal starten
 
-Die Seite ist eine Single-Page-App und laed ihre Daten zur Laufzeit nach – daher **nicht** per Doppelklick auf `index.html`, sondern ueber einen kleinen Webserver oeffnen:
-
 ```bash
-cd nosignups-mirror
 python3 -m http.server 8080
 # dann im Browser: http://localhost:8080
 ```
 
-Jeder andere statische Server geht auch (`npx serve`, nginx, GitHub Pages, ...).
+## 🔗 Datenquellen zur Laufzeit
 
-- **Tool-Daten (268 Tools):** `tools.json` aus dem Original-Repo `BraveOPotato/FckSignups`
+Die App laed zur Laufzeit live nach:
+
+- **Tool-Daten (268 Tools):** `tools.json` aus einem externen Open-Source-Datensatz
 - **GitHub-Sterne:** direkt von `api.github.com`
-- **Formulare** (Tool vorschlagen/melden): an die Cloudflare-Worker des Originalbetreibers
+
+## ⚖️ Lizenz & Credits
+
+Nexus-AI steht unter der **GPL-3.0** (siehe [`LICENSE`](LICENSE)) und basiert auf einem Open-Source-Verzeichnisprojekt (Quellcode & Daten: `github.com/BraveOPotato/FckSignups`).
+
+Stand: 2026-09-24
